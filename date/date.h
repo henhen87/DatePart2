@@ -11,12 +11,12 @@ class Date
 public:
 	Date();
 	Date(Date &);
-	bool operator==(Date);
-	bool operator>(Date);
-	Date operator-(Date);
-	void operator=(Date);
+	bool operator== (Date obj);
+	bool operator> (Date obj);
+	Date operator- (Date obj);
+	void operator= (Date obj);
 
-	friend Date operator>>(int, int, int);
+	friend Date operator>>(ostream& out, Date a);
 };
 #endif // !DATE_H
 
