@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-using std::cin;
-using std::cout;
+using std::ostream;
+using std::istream;
 #ifndef DATE_H
 #define DATE_H
 class Date
@@ -10,13 +10,14 @@ class Date
 
 public:
 	Date();
-	Date(Date &);
-	bool operator== (Date obj);
-	bool operator> (Date obj);
-	Date operator- (Date obj);
-	void operator= (Date obj);
+	Date(Date &obj);
+	bool operator==(Date obj);
+	bool operator>(Date obj);
+	Date operator-(Date obj);
+	void operator=(Date obj);
 
-	friend Date operator>>(ostream& out, Date a);
+	friend ostream &operator>>(istream& in, Date &obj);
+	friend istream &operator<<(ostream& out, Date obj);
 };
-#endif // !DATE_H
+#endif
 
