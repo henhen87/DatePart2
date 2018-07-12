@@ -16,8 +16,8 @@ public:
 	Date operator-(Date obj);
 	void operator=(Date obj);
 
-	friend ostream &operator>>(istream& in, Date &obj);
-	friend istream &operator<<(ostream& out, Date obj);
+	friend istream &operator>>(istream& in, Date &obj);
+	friend ostream &operator<<(ostream& out, Date obj);
 };
 #endif
 
