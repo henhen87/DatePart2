@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	Date date1;
-	Date date2 = date1; //copy constructor called
+	Date date2 = date1;
 
 	cout << "Initial date values\n";
 	cout << "Date 1 is ";
@@ -39,7 +39,7 @@ int main()
 	}
 
 	Date date3, date4;
-	date4 = date3 = date2; //overloaded assignment operator called
+	date4 = date3 = date2;
 	cout << "After the assignment date4 = date3 = date2\n";
 	cout << " Date 3 is " << date3 << " and Date 4 is " << date4 << endl;
 	return 0;
