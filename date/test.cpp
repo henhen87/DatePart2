@@ -27,13 +27,13 @@ int main()
 		cout << "The two input dates are the same\n";
 	else if (date1 > date2)
 	{
-		cout << "Date 1 is later in time than Date 2 by ";
+		cout << "Date 1 is later in time than Date 2 by \n";
 		Date temp = date1 - date2;
 		cout << temp << endl;
 	}
 	else
 	{
-		cout << "Date 2 is later in time than Date 1 by ";
+		cout << "Date 2 is later in time than Date 1 by \n";
 		Date temp = date2 - date1;
 		cout << temp << endl;
 	}
