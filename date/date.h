@@ -10,11 +10,11 @@ class Date
 
 public:
 	Date();
-	Date(Date &obj);
-	bool operator==(Date obj);
-	bool operator>(Date obj);
-	Date operator-(Date obj);
-	void operator=(Date obj);
+	//Date(Date &obj);
+	bool operator==(const Date obj);
+	bool operator>(const Date obj);
+	Date operator-(const Date date2);
+	//void operator=(Date obj);
 
 	friend istream &operator>>(istream& in, Date &obj);
 	friend ostream &operator<<(ostream& out, Date obj);

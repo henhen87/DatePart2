@@ -38,9 +38,9 @@ int main()
 		cout << temp << endl;
 	}
 
-	Date date3, date4;
+	/*Date date3, date4;
 	date4 = date3 = date2;
 	cout << "After the assignment date4 = date3 = date2\n";
-	cout << " Date 3 is " << date3 << " and Date 4 is " << date4 << endl;
+	cout << " Date 3 is " << date3 << " and Date 4 is " << date4 << endl;*/
 	return 0;
 }
