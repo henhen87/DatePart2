@@ -14,7 +14,7 @@ public:
 	bool operator==(const Date& obj);
 	bool operator>(const Date& obj);
 	Date operator-(const Date& obj);
-	//Date operator=(const Date& obj);
+	Date operator=(const Date& obj);
 
 	friend istream &operator>>(istream& in, Date &obj);
 	friend ostream &operator<<(ostream& out, Date &obj);
