@@ -7,17 +7,17 @@ using std::istream;
 class Date
 {
 	int month, day, year;
-
+	Date *datePtr = this;
 public:
 	Date();
-	//Date(Date &obj);
-	bool operator==(const Date obj);
-	bool operator>(const Date obj);
-	Date operator-(const Date date2);
-	//void operator=(Date obj);
+	Date(Date &);
+	bool operator==(const Date& obj);
+	bool operator>(const Date& obj);
+	Date operator-(const Date& obj);
+	//Date operator=(const Date& obj);
 
 	friend istream &operator>>(istream& in, Date &obj);
-	friend ostream &operator<<(ostream& out, Date obj);
+	friend ostream &operator<<(ostream& out, Date &obj);
 };
 #endif
 
