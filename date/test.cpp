@@ -35,6 +35,7 @@ int main()
 	{
 		cout << "Date 2 is later in time than Date 1 by \n";
 		Date temp = date2 - date1;
+		cout << "22222" << endl;
 		cout << temp << endl;
 	}
 
