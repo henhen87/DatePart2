@@ -7,10 +7,10 @@ using std::istream;
 class Date
 {
 	int month, day, year;
-	Date *datePtr = this;
+	//Date *datePtr;
 public:
 	Date();
-	Date(Date &);
+	Date(const Date &);
 	bool operator==(const Date& obj);
 	bool operator>(const Date& obj);
 	Date operator-(const Date& obj);
